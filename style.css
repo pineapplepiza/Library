@@ -1,0 +1,59 @@
+:root {
+    --text: ;
+    --buttonText: ;
+}
+
+/* body {
+    display: flex;
+    flex-direction: column;
+    
+} */
+
+.row {
+    max-width: 80vw;
+    display: flex;
+    /* justify-content: center;
+    text-align: left; */
+}
+
+/* @media (min-width: 400px) {
+    .row{
+        
+    }
+} */
+
+.statusButton{
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.deleteButton{
+    background-color: rgb(241, 48, 193);
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#statusInput{
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+#addBookButton{
+    background-color: rgb(1, 242, 242);
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+}
