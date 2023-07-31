@@ -3,20 +3,33 @@
     --buttonText: ;
 }
 
-/* body {
-    display: flex;
-    flex-direction: column;
-    
-} */
-
-.row {
-    max-width: 80vw;
-    display: flex;
-    /* justify-content: center;
-    text-align: left; */
+body {
+    margin: 0;
+    padding: 0;
 }
 
-/* @media (min-width: 400px) {
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.row {
+    /* max-width: 80vw; */
+    text-align: left;
+    margin-top: 10px;
+}
+
+#Title{
+    padding: 12px 12px 12px 0px;
+    font-size: 35px;
+}
+
+#bookForm{
+    padding: 12px 12px 12px 0px;
+}
+
+/* @media (orientation: landscape) {
     .row{
         
     }
@@ -28,6 +41,8 @@
     font-size: 16px;
     font-weight: bold;
     border-radius: 5px;
+
+    flex-shrink: 0; /* Doesn't do anything... */
 }
 
 .deleteButton{
@@ -37,6 +52,10 @@
     font-size: 16px;
     font-weight: bold;
     border-radius: 5px;
+}
+
+.deleteButton:hover{
+    background-color: rgb(190, 39, 152);
 }
 
 #statusInput{
@@ -52,8 +71,17 @@
     font-size: 14px;
     font-weight: bold;
     border-radius: 5px;
+
+    max-width: 80px;
+    margin: 8px 8px 8px 0px;
+}
+
+#addBookButton:hover{
+    background-color: rgb(3, 184, 184);
 }
 
 th, td {
     border-bottom: 1px solid #ddd;
+    padding: 20px 20px 20px 0px;
+    font-size: 18px;
 }
