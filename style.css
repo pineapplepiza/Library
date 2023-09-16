@@ -12,6 +12,7 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding: 10px;
+    margin-top: 5%;
 }
 
 .row {
@@ -74,6 +75,7 @@ body {
 
     max-width: 80px;
     margin: 8px 8px 8px 0px;
+    /* padding: 0px 30px; */
 }
 
 #addBookButton:hover{
@@ -85,3 +87,12 @@ th, td {
     padding: 20px 20px 20px 0px;
     font-size: 18px;
 }
+
+/* .labelInputBox{
+    display: flex;
+    flex-direction: column;
+} */
+
+/* #titleInput{
+    max-width: 20vw;
+} */
