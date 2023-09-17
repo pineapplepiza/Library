@@ -94,12 +94,6 @@ function addDefaultBooks() {
     addBookToLibrary("Think and Grow Rich", "Napolean Hill", "Read");
 }
 
-// Function to initialize the page
-/* function init() {
-    addDefaultBooks(); // Add default books to the library
-    displayBooks(); // Display the default books on the page
-} */
-
 // Function to handle the "Add Book" button click
 function addBook() {
     const title = document.getElementById("titleInput").value
@@ -112,11 +106,23 @@ function addBook() {
         displayBooks(); // Update the displayed table
     }
 
-    // TRYING TO WIPE THE INSERT BAR AFTER ADDING BOOK BUTTON IS PRESSED !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    var x = document.getElementById("titleInput")
-    var y = documennt.getElementById("authorInput")
-    x.value = ""
-    y.value = ""
+    // Resetting input after "Add Book" button is pressed
+    document.getElementById("statusInput").value = "Read";
+
+    const x = document.getElementById("titleInput")
+    const y = document.getElementById("authorInput")
+
+    // Erasing if both title and author was entered.
+    if ((x.value != "") && (y.value != "")) {
+        document.getElementById("titleInput").value = "";
+        document.getElementById("authorInput").value = "";
+    } else if ((x.value != "") && (y.value == "")) { //If author is empty and title is entered alert!
+        alert("Enter an author!")
+    } else if ((x.value == "") && (y.value != "")) { //If title is empty and author is entered alert!
+        alert("Enter a title!")
+    } else if (x.value == "" && y.value == ""){
+        alert("Enter a title and author!")
+    }
 
 }
 
